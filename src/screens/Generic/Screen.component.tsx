@@ -1,8 +1,8 @@
 import React from 'react';
-import PageContainer from '../../components/atoms/PageContainer';
+import PageScrollContainer from '../../components/atoms/PageScrollContainer';
 
 const Home: React.FC = () => {
-  return <PageContainer />;
+  return <PageScrollContainer />;
 };
 
 export default Home;

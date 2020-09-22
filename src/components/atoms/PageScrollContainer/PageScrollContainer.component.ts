@@ -1,6 +1,6 @@
 import Styled from 'styled-components/native';
 
-export default Styled.SafeAreaView`
+export default Styled.ScrollView`
     display: flex;
     flex-direction: column;
     background-color: white;
