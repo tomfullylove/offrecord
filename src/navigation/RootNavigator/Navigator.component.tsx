@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import colors from '../../utils/colors';
 
+import Discover from '../DiscoverNavigator';
 import Generic from '../../screens/Generic';
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +20,7 @@ const Navigator: React.FC = () => {
         }}>
         <Tab.Screen
           name="Discover"
-          component={Generic}
+          component={Discover}
           options={{
             tabBarLabel: 'Discover',
             tabBarIcon: ({color, size}) => (

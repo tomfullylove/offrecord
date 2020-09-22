@@ -1,8 +1,11 @@
 import React from 'react';
 import {Provider} from 'react-redux';
+import { enableScreens } from 'react-native-screens';
 
 import store from './redux/store';
 import RootNavigator from './navigation/RootNavigator';
+
+enableScreens();
 
 const App: React.FC = () => {
   return (
