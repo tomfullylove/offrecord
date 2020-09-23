@@ -17,6 +17,11 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* offrecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* offrecordTests.m */; };
 		341DA84EE762ADA757592ACC /* libPods-offrecord-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03544BB1C66532EB55B5A883 /* libPods-offrecord-tvOSTests.a */; };
+		7DC3ACBE251B2D3900205EC4 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3ACB9251B2D3900205EC4 /* Quicksand-Regular.ttf */; };
+		7DC3ACBF251B2D3900205EC4 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3ACBA251B2D3900205EC4 /* Quicksand-Medium.ttf */; };
+		7DC3ACC0251B2D3900205EC4 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3ACBB251B2D3900205EC4 /* Quicksand-SemiBold.ttf */; };
+		7DC3ACC1251B2D3900205EC4 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3ACBC251B2D3900205EC4 /* Quicksand-Bold.ttf */; };
+		7DC3ACC2251B2D3900205EC4 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DC3ACBD251B2D3900205EC4 /* Quicksand-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		981F0C51A9EE1552D832F8A1 /* libPods-offrecord-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 275066D10DBBF99EF758DE15 /* libPods-offrecord-tvOS.a */; };
 		B787065D48A9F7D9C5AE1B0D /* libPods-offrecord-offrecordTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAD7C220A9B3077BE108D61 /* libPods-offrecord-offrecordTests.a */; };
@@ -60,6 +65,11 @@
 		3BAD7C220A9B3077BE108D61 /* libPods-offrecord-offrecordTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-offrecord-offrecordTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB082DA231A0BA4C44FC477 /* libPods-offrecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-offrecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8E8402E9F5C9A136FB2207 /* Pods-offrecord-offrecordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offrecord-offrecordTests.release.xcconfig"; path = "Target Support Files/Pods-offrecord-offrecordTests/Pods-offrecord-offrecordTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DC3ACB9251B2D3900205EC4 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		7DC3ACBA251B2D3900205EC4 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Medium.ttf"; path = "../fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		7DC3ACBB251B2D3900205EC4 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-SemiBold.ttf"; path = "../fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		7DC3ACBC251B2D3900205EC4 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.ttf"; path = "../fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		7DC3ACBD251B2D3900205EC4 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Light.ttf"; path = "../fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = offrecord/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8887C88AA02DAE3E48F84167 /* Pods-offrecord-offrecordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offrecord-offrecordTests.debug.xcconfig"; path = "Target Support Files/Pods-offrecord-offrecordTests/Pods-offrecord-offrecordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCA733AC928462B41C3CA91A /* Pods-offrecord-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offrecord-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-offrecord-tvOS/Pods-offrecord-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +158,6 @@
 				14A5F72E025A07128DD35012 /* Pods-offrecord-tvOSTests.debug.xcconfig */,
 				DAD2C53F388F93CCE893ACF3 /* Pods-offrecord-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,6 +174,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D95B17C251B2E13006B4D24 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7DC3ACBC251B2D3900205EC4 /* Quicksand-Bold.ttf */,
+				7DC3ACBD251B2D3900205EC4 /* Quicksand-Light.ttf */,
+				7DC3ACBA251B2D3900205EC4 /* Quicksand-Medium.ttf */,
+				7DC3ACB9251B2D3900205EC4 /* Quicksand-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +195,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				7D95B17C251B2E13006B4D24 /* fonts */,
+				7DC3ACBB251B2D3900205EC4 /* Quicksand-SemiBold.ttf */,
 				13B07FAE1A68108700A75B9A /* offrecord */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* offrecordTests */,
@@ -341,6 +363,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				7DC3ACC1251B2D3900205EC4 /* Quicksand-Bold.ttf in Resources */,
+				7DC3ACC0251B2D3900205EC4 /* Quicksand-SemiBold.ttf in Resources */,
+				7DC3ACC2251B2D3900205EC4 /* Quicksand-Light.ttf in Resources */,
+				7DC3ACBF251B2D3900205EC4 /* Quicksand-Medium.ttf in Resources */,
+				7DC3ACBE251B2D3900205EC4 /* Quicksand-Regular.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
