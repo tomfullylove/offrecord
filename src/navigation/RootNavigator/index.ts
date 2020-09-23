@@ -1,3 +1,1 @@
-import Navigator from './Navigator.component';
-
-export default Navigator;
+export { default } from './Navigator.component';

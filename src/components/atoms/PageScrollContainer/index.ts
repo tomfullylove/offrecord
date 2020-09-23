@@ -1,2 +1,1 @@
-import PageScrollContainer from './PageScrollContainer.component';
-export default PageScrollContainer;
+export { default } from './PageScrollContainer.component';

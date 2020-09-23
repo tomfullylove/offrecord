@@ -1,7 +1,7 @@
 import SagaTester from 'redux-saga-tester';
 
-import {testAction} from '../actions';
-import {testSaga} from '../sagas';
+import { testAction } from '../actions';
+import { testSaga } from '../sagas';
 import * as types from '../types';
 
 describe('Saga', () => {

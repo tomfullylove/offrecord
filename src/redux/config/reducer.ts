@@ -1,4 +1,4 @@
-import {TEST_ACTION, ConfigState, ConfigActionTypes} from './types';
+import { TEST_ACTION, ConfigState, ConfigActionTypes } from './types';
 
 const initialState: ConfigState = {
   test: '',

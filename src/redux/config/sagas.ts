@@ -1,7 +1,7 @@
-import {takeEvery, put} from 'redux-saga/effects';
+import { takeEvery, put } from 'redux-saga/effects';
 
-import {TEST_ACTION} from './types';
-import {testSuccessAction} from './actions';
+import { TEST_ACTION } from './types';
+import { testSuccessAction } from './actions';
 
 export function* testSaga() {
   yield put(testSuccessAction());

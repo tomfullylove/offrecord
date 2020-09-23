@@ -1,4 +1,4 @@
-import {TEST_ACTION, TEST_SUCCESS_ACTION, ConfigActionTypes} from './types';
+import { TEST_ACTION, TEST_SUCCESS_ACTION, ConfigActionTypes } from './types';
 
 export function testAction(value: string): ConfigActionTypes {
   return {

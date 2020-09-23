@@ -1,8 +1,8 @@
 import React from 'react';
-import {createNativeStackNavigator} from 'react-native-screens/native-stack';
+import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 
 import fonts from '../../utils/fonts';
-import Discover from '../../screens/Generic';
+import Discover from '../../screens/Discover';
 
 const Stack = createNativeStackNavigator();
 
