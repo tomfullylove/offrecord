@@ -6,4 +6,10 @@ export default {
     semiBold: 'Quicksand-SemiBold',
     bold: 'Quicksand-Bold',
   },
-  };
+  sub: {
+    light: 'Lato-Light',
+    regular: 'Lato-Regular',
+    semiBold: 'Lato-Bold',
+    bold: 'Lato-Black',
+  }
+};
