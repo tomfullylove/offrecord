@@ -8,6 +8,7 @@ export const Container = Styled.View`
   flex-direction: column;
   background-color: ${colors.lightGrey};
   padding: 16px 0;
+  margin: 8px 0;
 `;
 
 export const Title = Styled.Text`
