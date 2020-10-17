@@ -4,15 +4,19 @@ import Preview from '../../../../components/organisms/previews/Standard';
 
 import { Container, Spacer } from './assets/styles';
 
-const List: React.FC = () => {
+interface Props {
+  showContent: () => void,
+}
+
+const List: React.FC<Props> = ({ showContent }) => {
   return (
     <Container>
-      <Preview />
+      <Preview showContent={showContent} />
       <Spacer />
-      <Preview />
+      <Preview showContent={showContent} />
       <Spacer />
-      <Preview />
-    </Container>
+      <Preview showContent={showContent} />
+    </Container> 
   );
 };
 

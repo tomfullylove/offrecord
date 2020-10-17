@@ -13,9 +13,13 @@ import {
   Tag,
 } from './assets/styles';
 
-const Preview: React.FC = () => {
+interface Props {
+  showContent: () => void,
+}
+
+const Preview: React.FC<Props> = ({ showContent }) => {
   return (
-    <Container onPress={() => {}}>
+    <Container onPress={showContent}>
       <Title>Cornhole hexagon four dollar toast master cleanse</Title>
       <SubTitle>Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle</SubTitle>
       <BottomContainer>

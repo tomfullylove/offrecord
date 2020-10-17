@@ -15,9 +15,13 @@ import {
   Avatar,
 } from './assets/styles';
 
-const Preview: React.FC = () => {
+interface Props {
+  showContent: () => void,
+}
+
+const Preview: React.FC<Props> = ({ showContent }) => {
   return (
-    <Container onPress={() => {}}>
+    <Container onPress={showContent}>
       <Image source={require('../../../../../assets/records.jpg')}>
         <Backdrop />
         <Content>

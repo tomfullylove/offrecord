@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 
 import fonts from '../../utils/fonts';
 import Discover from '../../screens/Discover';
+import Content from '../../screens/Content';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,15 @@ const Navigator: React.FC = () => {
           headerLargeTitleStyle: {
             fontFamily: fonts.main.bold,
           },
+          headerTitleStyle: {
+            fontFamily: fonts.main.bold,
+          }
+        }}
+      />
+      <Stack.Screen
+        name="Content"
+        component={Content}
+        options={{
           headerTitleStyle: {
             fontFamily: fonts.main.bold,
           }
