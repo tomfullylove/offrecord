@@ -1,21 +1,20 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import Preview from '../../../../components/organisms/previews/Featured';
 
 import { Container, Title, ScrollContainer, Spacer } from './assets/styles';
 
-interface Props {
-  showContent: () => void,
-}
+const List: React.FC = () => {
+  const navigation = useNavigation();
 
-const List: React.FC<Props> = ({ showContent }) => {
   return (
     <Container>
       <Title>New releases in Cardiff</Title>
       <ScrollContainer>
-        <Preview showContent={showContent} />
+        <Preview showContent={() => navigation.navigate('Content')} />
         <Spacer />
-        <Preview showContent={showContent} />
+        <Preview showContent={() => navigation.navigate('Content')} />
       </ScrollContainer>
     </Container>
   );
