@@ -2,19 +2,32 @@ import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
 import Preview from '../../../../components/organisms/previews/Standard';
+import { preview as itemType } from '../../../../types/previews/standard';
 
 import { Container, Spacer } from './assets/styles';
 
-const List: React.FC = () => {
+interface Props {
+  items: Array<itemType>,
+}
+
+const List: React.FC<Props> = ({ items }) => {
   const navigation = useNavigation();
 
   return (
     <Container>
-      <Preview showContent={() => navigation.navigate('Content')} />
-      <Spacer />
-      <Preview showContent={() => navigation.navigate('Content')} />
-      <Spacer />
-      <Preview showContent={() => navigation.navigate('Content')} />
+      {items.map(item => (
+        <React.Fragment key={item.id}>
+        <Preview
+          showContent={() => navigation.navigate('Content')}
+          title={item.title}
+          subTitle={item.subTitle}
+          name={item.user.name}
+          date={item.date}
+          type={item.type}
+        />
+        <Spacer />
+        </React.Fragment>
+      ))}
     </Container>
   );
 };
