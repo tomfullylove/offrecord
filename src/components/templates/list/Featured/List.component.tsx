@@ -5,16 +5,30 @@ import Preview from '../../../../components/organisms/previews/Featured';
 
 import { Container, Title, ScrollContainer, Spacer } from './assets/styles';
 
-const List: React.FC = () => {
+interface Props {
+  title: string,
+  items: any,
+}
+
+const List: React.FC<Props> = ({title, items}) => {
   const navigation = useNavigation();
 
   return (
     <Container>
-      <Title>New releases in Cardiff</Title>
+      <Title>{title}</Title>
       <ScrollContainer>
-        <Preview showContent={() => navigation.navigate('Content')} />
-        <Spacer />
-        <Preview showContent={() => navigation.navigate('Content')} />
+      {items.map(item => (
+        <React.Fragment key={item.id}>
+          <Preview
+            showContent={() => navigation.navigate('Content')}
+            title={item.title}
+            subTitle={item.subTitle}
+            name={item.user.name}
+            type={item.type}
+          />
+        {item !== items[items.length - 1] && <Spacer />}
+        </React.Fragment>
+      ))}
       </ScrollContainer>
     </Container>
   );

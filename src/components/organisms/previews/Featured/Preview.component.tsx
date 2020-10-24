@@ -17,22 +17,32 @@ import {
 
 interface Props {
   showContent: () => void,
+  title: string,
+  subTitle: string,
+  name: string,
+  type: string,
 }
 
-const Preview: React.FC<Props> = ({ showContent }) => {
+const Preview: React.FC<Props> = ({
+  showContent,
+  title,
+  subTitle,
+  name,
+  type,
+}) => {
   return (
     <Container onPress={showContent}>
       <Image source={require('../../../../../assets/records.jpg')}>
         <Backdrop />
         <Content>
-          <Title>Cornhole hexagon four dollar toast master cleanse</Title>
-          <SubTitle>Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle</SubTitle>
+          <Title>{title}</Title>
+          <SubTitle>{subTitle}</SubTitle>
           <BottomContainer>
             <Tag>
-              <Label>Review</Label>
+              <Label>{type}</Label>
             </Tag>
             <UserContainer>
-              <Name>Tom fully</Name>
+              <Name>{name}</Name>
               <Avatar source={require('../../../../../assets/person.jpg')} />
             </UserContainer>
           </BottomContainer>

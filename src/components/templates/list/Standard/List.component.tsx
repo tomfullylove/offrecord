@@ -25,7 +25,7 @@ const List: React.FC<Props> = ({ items }) => {
           date={item.date}
           type={item.type}
         />
-        <Spacer />
+        {item !== items[items.length - 1] && <Spacer />}
         </React.Fragment>
       ))}
     </Container>
