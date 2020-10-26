@@ -13,7 +13,7 @@ export const Container = Styled.View`
 
 export const Title = Styled.Text`
   margin: 0 0 16px 16px;
-  font-family: ${fonts.main.bold};
+  font-family: ${fonts.main.semiBold};
   font-size: 16px;
 `;
 

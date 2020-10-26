@@ -10,15 +10,23 @@ export const Container = Styled(Pressable)`
   padding: 24px;
 `;
 
-export const Title = Styled.Text`
+export const Type = Styled.Text`
   font-family: ${fonts.main.bold};
-  font-size: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
   margin-bottom: 8px;
+`;
+
+export const Title = Styled.Text`
+  font-family: ${fonts.main.semiBold};
+  font-size: 20px;
+  margin-bottom: 6px;
 `;
 
 export const SubTitle = Styled.Text.attrs({
   numberOfLines: 2,
 })`
+  color: ${colors.grey};
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
 `;
@@ -27,7 +35,7 @@ export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 16px 4px 0;
+  margin-top: 8px;
 `;
 
 export const UserContainer = Styled.View`
@@ -36,34 +44,19 @@ export const UserContainer = Styled.View`
   align-items: center;
 `;
 
-export const Avatar = Styled.Image`
-  height: 32px;
-  width: 32px;
-  border-radius: 16px;
-`;
-
 export const NameContainer = Styled.View`
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
 `;
 
 export const Name = Styled.Text`
   font-family: ${fonts.main.semiBold};
-  font-size: 12px;
+  font-size: 14px;
+  margin-bottom: 2px;
 `;
 
 export const Date = Styled.Text`
-  font-family: ${fonts.main.medium};
-  font-size: 10px;
-`;
-
-export const Tag = Styled.View`
-  height: 32px;
-  background-color: ${colors.lightGrey};
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 16px;
+  color: ${colors.grey};
+  font-family: ${fonts.main.regular};
+  font-size: 12px;
 `;

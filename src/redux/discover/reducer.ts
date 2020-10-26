@@ -9,9 +9,9 @@ const initialState = {
         subTitle: 'Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle',
         user: {
           id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
-          name: 'Tom Fully',
+          name: 'Tom Fullylove',
         },
-        date: '22-04-2020',
+        date: '3 hours ago',
         type: 'Article'
       },
       {
@@ -20,15 +20,15 @@ const initialState = {
         subTitle: 'Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle',
         user: {
           id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
-          name: 'Tom Fully',
+          name: 'Tom Fullylove',
         },
-        date: '22-04-2020',
-        type: 'Article'
+        date: '2 days ago',
+        type: 'Review'
       },
     ],
     featured: [
       {
-        title: 'New releases in Cardiff',
+        title: 'New releases for you',
         previews: [
           {
             id: 'c38d5280-667e-47e9-ad52-d980970c6ff2',
@@ -36,7 +36,7 @@ const initialState = {
             subTitle: 'Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle',
             user: {
               id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
-              name: 'Tom Fully',
+              name: 'Tom Fullylove',
             },
             type: 'Review'
           },
@@ -46,7 +46,7 @@ const initialState = {
             subTitle: 'Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle',
             user: {
               id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
-              name: 'Tom Fully',
+              name: 'Tom Fullylove',
             },
             type: 'Review'
           },

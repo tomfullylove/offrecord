@@ -3,6 +3,7 @@ export default {
   white: '#FFFFFF',
   main: '#007FFF',
   mainShadow: 'rgba(0,127,255, 0.3)',
-  lightGrey: '#F0F0F0',
+  lightGrey: '#f2f2f2',
+  grey: '#404040',
   shadow: 'rgba(0, 0, 0, 0.2)',
 };

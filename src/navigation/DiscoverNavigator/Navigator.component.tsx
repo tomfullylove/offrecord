@@ -20,10 +20,10 @@ const Navigator: React.FC = () => {
         options={{
           headerLargeTitle: true,
           headerLargeTitleStyle: {
-            fontFamily: fonts.main.bold,
+            fontFamily: fonts.main.semiBold,
           },
           headerTitleStyle: {
-            fontFamily: fonts.main.bold,
+            fontFamily: fonts.main.semiBold,
           }
         }}
       />
@@ -32,7 +32,7 @@ const Navigator: React.FC = () => {
         component={Content}
         options={{
           headerTitleStyle: {
-            fontFamily: fonts.main.bold,
+            fontFamily: fonts.main.semiBold,
           }
         }}
       />

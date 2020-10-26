@@ -2,15 +2,14 @@ import React from 'react';
 
 import {
   Container,
+  Type,
   Title,
   SubTitle,
   BottomContainer,
   UserContainer,
-  Avatar,
   NameContainer,
   Name,
   Date,
-  Tag,
 } from './assets/styles';
 
 interface Props {
@@ -32,19 +31,16 @@ const Preview: React.FC<Props> = ({
 }) => {
   return (
     <Container onPress={showContent}>
+      <Type>{type}</Type>
       <Title>{title}</Title>
       <SubTitle>{subTitle}</SubTitle>
       <BottomContainer>
         <UserContainer>
-          <Avatar source={require('../../../../../assets/person.jpg')} />
           <NameContainer>
             <Name>{name}</Name>
             <Date>{date}</Date>
           </NameContainer>
         </UserContainer>
-        <Tag>
-          <Name>{type}</Name>
-        </Tag>
       </BottomContainer>
     </Container>
   );
