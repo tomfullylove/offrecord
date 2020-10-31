@@ -10,8 +10,8 @@ enableScreens();
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-    <RootNavigator />
-  </Provider>
+      <RootNavigator />
+    </Provider>
   );
 };
 

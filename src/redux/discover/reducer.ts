@@ -11,7 +11,7 @@ const initialState = {
           id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
           name: 'Tom Fullylove',
         },
-        date: '3 hours ago',
+        date: '22 Apr 2020',
         type: 'Article'
       },
       {
@@ -22,7 +22,7 @@ const initialState = {
           id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
           name: 'Tom Fullylove',
         },
-        date: '2 days ago',
+        date: '17 Apr 2020',
         type: 'Review'
       },
     ],
