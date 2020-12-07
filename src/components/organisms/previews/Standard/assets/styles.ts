@@ -11,14 +11,14 @@ export const Container = Styled(Pressable)`
 `;
 
 export const Type = Styled.Text`
-  font-family: ${fonts.main.bold};
+  font-family: ${fonts.main.semiBold};
   font-size: 12px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 `;
 
 export const Title = Styled.Text`
-  font-family: ${fonts.main.semiBold};
+  font-family: ${fonts.main.bold};
   font-size: 20px;
   margin-bottom: 6px;
 `;
@@ -52,7 +52,7 @@ export const NameContainer = Styled.View`
 export const Name = Styled.Text`
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 `;
 
 export const Date = Styled.Text`

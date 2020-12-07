@@ -8,11 +8,9 @@ import {
   Title,
   SubTitle,
   BottomContainer,
-  Tag,
   Label,
   UserContainer,
   Name,
-  Avatar,
 } from './assets/styles';
 
 interface Props {
@@ -38,12 +36,8 @@ const Preview: React.FC<Props> = ({
           <Title>{title}</Title>
           <SubTitle>{subTitle}</SubTitle>
           <BottomContainer>
-            <Tag>
-              <Label>{type}</Label>
-            </Tag>
             <UserContainer>
               <Name>{name}</Name>
-              <Avatar source={require('../../../../../assets/person.jpg')} />
             </UserContainer>
           </BottomContainer>
         </Content>

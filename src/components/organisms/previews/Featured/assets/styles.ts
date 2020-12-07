@@ -42,7 +42,7 @@ export const Content = Styled.View`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 8px;
+  padding: 12px;
 `;
 
 export const Title = Styled.Text.attrs({
@@ -59,24 +59,14 @@ export const SubTitle = Styled.Text.attrs({
 })`
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
-  color: ${colors.white};
+  color: ${colors.lightGrey};
 `;
 
 export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 8px;
-`;
-
-export const Tag = Styled.View`
-  height: 24px;
-  background-color: ${colors.white};
-  border-radius: 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 12px;
+  margin-top: 6px;
 `;
 
 export const Label = Styled.Text`
@@ -91,14 +81,7 @@ export const UserContainer = Styled.View`
 `;
 
 export const Name = Styled.Text`
-  font-family: ${fonts.main.semiBold};
+  font-family: ${fonts.main.bold};
   font-size: 12px;
   color: ${colors.white};
-`;
-
-export const Avatar = Styled.Image`
-  height: 22px;
-  width: 22px;
-  border-radius: 12px;
-  margin-left: 4px;
 `;
