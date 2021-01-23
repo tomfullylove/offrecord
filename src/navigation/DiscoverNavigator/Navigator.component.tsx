@@ -19,10 +19,10 @@ const Navigator: React.FC = () => {
         options={{
           headerLargeTitle: true,
           headerLargeTitleStyle: {
-            fontFamily: fonts.main.semiBold,
+            fontFamily: fonts.main.bold,
           },
           headerTitleStyle: {
-            fontFamily: fonts.main.semiBold,
+            fontFamily: fonts.main.bold,
           }
         }}
       />

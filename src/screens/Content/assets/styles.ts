@@ -1,4 +1,3 @@
-import { Pressable } from 'react-native';
 import Styled from 'styled-components/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -34,51 +33,4 @@ export const CloseIcon = Styled(Ionicons).attrs({
   size: 32,
 })`
   margin-right: 16px;
-`;
-
-export const Container = Styled.ScrollView.attrs({
-  showsVerticalScrollIndicator: false,
-})`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Title = Styled.Text`
-  font-family: ${fonts.main.bold};
-  font-size: 28px;
-  padding: 0 16px;
-`;
-
-export const SubTitle = Styled.Text`
-  font-family: ${fonts.main.semiBold};
-  font-size: 17px;
-  color: ${colors.grey};
-  padding: 6px 16px 24px;
-`;
-
-export const Image = Styled.Image`
-  width: 100%;
-  height: 250px;
-`;
-
-export const ImageText = Styled.Text`
-  margin-top: 8px;
-  font-family: ${fonts.main.regular};
-  font-size: 14px;
-  color: ${colors.grey};
-  text-align: center;
-`;
-
-export const ContentContainer = Styled.View`
-  display: flex;
-  flex-direction: column;
-  padding: 0 16px;
-`;
-
-export const Text = Styled.Text`
-  margin-top: 24px;
-  font-family: ${fonts.main.regular};
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: .3px;
 `;

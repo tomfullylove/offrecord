@@ -5,6 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import colors from '../../utils/colors';
 
 import Discover from '../DiscoverNavigator';
+import Map from '../../screens/Map';
 import Generic from '../../screens/Generic';
 
 const Tab = createBottomTabNavigator();
@@ -28,7 +29,7 @@ const Navigator: React.FC = () => {
       />
       <Tab.Screen
         name="Map"
-        component={Generic}
+        component={Map}
         options={{
           tabBarLabel: 'Map',
           tabBarIcon: ({color, size}) => (
