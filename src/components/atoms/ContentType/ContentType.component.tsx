@@ -14,9 +14,9 @@ type ContentStyles = {
 };
 
 const contentStyles: ContentStyles = {
-  'article': { color: colors.sub[0], width: '52px' },
-  'review': { color: colors.sub[1], width: '50px' },
-  'interview': {color: colors.sub[2], width: '70px'}
+  'article': { color: colors.main[0], width: '52px' },
+  'review': { color: colors.main[1], width: '50px' },
+  'interview': {color: colors.main[2], width: '70px'}
 };
 
 interface Props {

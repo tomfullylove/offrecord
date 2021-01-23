@@ -19,7 +19,7 @@ export const Title = Styled.Text`
 export const SubTitle = Styled.Text.attrs({
   numberOfLines: 2,
 })`
-  color: ${colors.grey};
+  color: ${colors.darkGrey};
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
 `;
@@ -49,7 +49,7 @@ export const Name = Styled.Text`
 `;
 
 export const Date = Styled.Text`
-  color: ${colors.grey};
+  color: ${colors.darkGrey};
   font-family: ${fonts.main.regular};
   font-size: 12px;
 `;

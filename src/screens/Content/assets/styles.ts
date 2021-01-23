@@ -25,7 +25,7 @@ export const Header = Styled.View`
 
 export const CloseIcon = Styled(Ionicons).attrs({
   name: 'close-outline',
-  color: colors.grey,
+  color: colors.darkGrey,
   size: 32,
 })`
   margin-right: 16px;
