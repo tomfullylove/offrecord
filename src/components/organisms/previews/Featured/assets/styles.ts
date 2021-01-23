@@ -5,6 +5,10 @@ import LinearGradient from 'react-native-linear-gradient';
 import colors from '../../../../../utils/colors';
 import fonts from '../../../../../utils/fonts';
 
+interface StyleProps {
+  color?: string,
+}
+
 export const Container = Styled(Pressable)`
   shadow-color: ${colors.shadow};
   shadow-offset: 0px 3px;
@@ -46,16 +50,16 @@ export const Content = Styled.View`
 `;
 
 export const Title = Styled.Text.attrs({
-  numberOfLines: 2,
+  numberOfLines: 4,
 })`
   font-family: ${fonts.main.bold};
-  font-size: 20px;
-  margin-bottom: 4px;
+  font-size: 32px;
+  line-height: 32px;
   color: ${colors.white};
 `;
 
 export const SubTitle = Styled.Text.attrs({
-  numberOfLines: 3,
+  numberOfLines: 2,
 })`
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
@@ -84,4 +88,14 @@ export const Name = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 12px;
   color: ${colors.white};
+`;
+
+export const Dot = Styled.View<StyleProps>`
+  position: absolute;
+  top: 12;
+  right: 12;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  background-color: ${({ color }) => color};
 `;

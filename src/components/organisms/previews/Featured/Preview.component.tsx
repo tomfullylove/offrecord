@@ -1,5 +1,7 @@
 import React from 'react';
 
+import contentTypeStyles from '../../../../utils/contentTypeStyles';
+
 import {
   Container,
   Backdrop,
@@ -11,6 +13,7 @@ import {
   Label,
   UserContainer,
   Name,
+  Dot,
 } from './assets/styles';
 
 interface Props {
@@ -33,8 +36,8 @@ const Preview: React.FC<Props> = ({
       <Image source={require('../../../../../assets/records.jpg')}>
         <Backdrop />
         <Content>
+          <Dot color={contentTypeStyles[type.toLowerCase()].color} />
           <Title>{title}</Title>
-          <SubTitle>{subTitle}</SubTitle>
           <BottomContainer>
             <UserContainer>
               <Name>{name}</Name>
