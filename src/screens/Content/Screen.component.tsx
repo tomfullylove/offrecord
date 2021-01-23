@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
+import ContentType from '../../components/atoms/ContentType';
+
 import {
   PageContainer,
   TopContainer,
@@ -14,7 +16,7 @@ const Content: React.FC = () => {
   return (
     <PageContainer>
       <TopContainer>
-        <Header>Article</Header>
+        <Header><ContentType type='article' /></Header>
         <CloseIcon onPress={() => navigation.goBack()}/>
       </TopContainer>
     </PageContainer>

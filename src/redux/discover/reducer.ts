@@ -12,7 +12,7 @@ const initialState = {
           name: 'Tom Fullylove',
         },
         date: '22 Apr 2020',
-        type: 'Article'
+        type: 'article'
       },
       {
         id: 'c38d5280-667e-47e8-ad52-d983970c6ff2',
@@ -23,7 +23,18 @@ const initialState = {
           name: 'Tom Fullylove',
         },
         date: '17 Apr 2020',
-        type: 'Review'
+        type: 'review'
+      },
+      {
+        id: 'c38d5280-667e-48e8-ad52-d983970c6ff2',
+        title: 'Cornhole hexagon four dollar toast master cleanse',
+        subTitle: 'Lorem ipsum dolor amet chicharrones punk meditation af marfa, cred green juice bluesy bottle',
+        user: {
+          id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
+          name: 'Tom Fullylove',
+        },
+        date: '17 Apr 2020',
+        type: 'interview'
       },
     ],
     featured: [
@@ -38,7 +49,7 @@ const initialState = {
               id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
               name: 'Tom Fullylove',
             },
-            type: 'Review'
+            type: 'review'
           },
           {
             id: 'c38d5280-667e-47e9-ad52-d980970c6ff4',
@@ -48,7 +59,7 @@ const initialState = {
               id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
               name: 'Tom Fullylove',
             },
-            type: 'Review'
+            type: 'review'
           },
         ],
       },

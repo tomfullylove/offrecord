@@ -17,14 +17,10 @@ export const TopContainer = Styled.View`
   padding: 12px 0;
 `;
 
-export const Header = Styled.Text`
-
-  font-family: ${fonts.main.semiBold};
-  font-size: 12px;
+export const Header = Styled.View`
   flex-grow: 1;
-  text-align: center;
   margin-left: 48px;
-  text-transform: uppercase;
+  align-items: center;
 `;
 
 export const CloseIcon = Styled(Ionicons).attrs({

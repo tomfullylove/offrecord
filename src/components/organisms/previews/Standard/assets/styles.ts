@@ -10,17 +10,10 @@ export const Container = Styled(Pressable)`
   padding: 24px;
 `;
 
-export const Type = Styled.Text`
-  font-family: ${fonts.main.semiBold};
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-`;
-
 export const Title = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 20px;
-  margin-bottom: 6px;
+  margin: 12px 0 6px;
 `;
 
 export const SubTitle = Styled.Text.attrs({

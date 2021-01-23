@@ -1,8 +1,9 @@
 import React from 'react';
 
+import ContentType from '../../../atoms/ContentType';
+
 import {
   Container,
-  Type,
   Title,
   SubTitle,
   BottomContainer,
@@ -31,7 +32,7 @@ const Preview: React.FC<Props> = ({
 }) => {
   return (
     <Container onPress={showContent}>
-      <Type>{type}</Type>
+      <ContentType type={type} />
       <Title>{title}</Title>
       <SubTitle>{subTitle}</SubTitle>
       <BottomContainer>
