@@ -10,7 +10,6 @@ import {
   Title,
   SubTitle,
   BottomContainer,
-  Label,
   UserContainer,
   Name,
   Dot,
@@ -38,6 +37,7 @@ const Preview: React.FC<Props> = ({
         <Content>
           <Dot color={contentTypeStyles[type.toLowerCase()].color} />
           <Title>{title}</Title>
+          <SubTitle>{subTitle}</SubTitle>
           <BottomContainer>
             <UserContainer>
               <Name>{name}</Name>

@@ -31,7 +31,7 @@ export const Backdrop = Styled(LinearGradient).attrs({
 `;
 
 export const Image = Styled.ImageBackground`
-  height: 248px;
+  height: 304px;
   width: 248px;
   position: relative;
   display: flex;
@@ -71,11 +71,6 @@ export const BottomContainer = Styled.View`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 6px;
-`;
-
-export const Label = Styled.Text`
-  font-family: ${fonts.main.semiBold};
-  font-size: 12px;
 `;
 
 export const UserContainer = Styled.View`

@@ -59,7 +59,7 @@ const initialState = {
               id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
               name: 'Tom Fullylove',
             },
-            type: 'review'
+            type: 'article'
           },
         ],
       },
