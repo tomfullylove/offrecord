@@ -10,7 +10,9 @@ export const Container = Styled(Pressable)`
   padding: 24px;
 `;
 
-export const Title = Styled.Text`
+export const Title = Styled.Text.attrs({
+  numberOfLines: 2,
+})`
   font-family: ${fonts.main.bold};
   font-size: 20px;
   margin: 12px 0 6px;

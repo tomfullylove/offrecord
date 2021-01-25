@@ -1,6 +1,17 @@
 import {UPDATE_CONTENT, VisibleContentActionTypes} from './types';
 
-const initialState = {}
+const initialState = {
+  id: '',
+  title: '',
+  intro: '',
+  content: {},
+  user: {
+    id: '',
+    name: '',
+  },
+  date: '',
+  type: '',
+}
 
 function visibleContent(state = initialState, action: VisibleContentActionTypes) {
   switch (action.type) {

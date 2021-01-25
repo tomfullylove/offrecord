@@ -49,7 +49,7 @@ export const Image = Styled.ImageBackground`
   justify-content: flex-end;
   border-radius: 8px;
   overflow: hidden;
-  padding: 16px 32px 16px 16px;
+  padding: 16px;
 `;
 
 export const Backdrop = Styled(LinearGradient).attrs({
