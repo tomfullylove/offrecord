@@ -1,17 +1,29 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
+
+import { updateVisibleContent } from '../../redux/visibleContent/actions';
+import { VisibleContentActionTypes } from '../../redux/visibleContent/types';
 
 import Screen from './Screen.component';
 
 interface StateProps {
   featuredContent: any,
-  standardContent: any;
+  standardContent: any,
 }
 
-export type Props = StateProps;
+interface DispatchProps {
+  updateContent: (content: any) => void;
+}
+
+export type Props = StateProps & DispatchProps;
 
 const mapStateToProps = (state: any): StateProps => ({
-  featuredContent: state.discover.content.featured,
-  standardContent: state.discover.content.standard,
+  featuredContent: state.discover.featured,
+  standardContent: state.discover.standard,
 });
 
-export default connect(mapStateToProps)(Screen);
+const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
+  updateContent: (content: any): VisibleContentActionTypes => dispatch(updateVisibleContent(content)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Screen);

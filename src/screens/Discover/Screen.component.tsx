@@ -6,11 +6,11 @@ import Standard from '../../components/templates/list/Standard';
 
 import { Props } from './Screen.container';
 
-const Discover: React.FC<Props> = ({ featuredContent, standardContent }) => {
+const Discover: React.FC<Props> = ({ featuredContent, standardContent, updateContent }) => {
   return (
     <PageScrollContainer>
-      <Featured title={featuredContent[0].title} items={featuredContent[0].previews}/>
-      <Standard items={standardContent}/>
+      <Featured title={featuredContent[0].title} items={featuredContent[0].previews} updateContent={updateContent}/>
+      <Standard items={standardContent} updateContent={updateContent}/>
     </PageScrollContainer>
   );
 };

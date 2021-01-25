@@ -1,7 +1,7 @@
 export type preview = {
   id: string,
   title: string,
-  subTitle: string,
+  intro: string,
   user: {
     id: string,
     name: string,

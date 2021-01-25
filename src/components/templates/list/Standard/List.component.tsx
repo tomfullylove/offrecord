@@ -8,9 +8,10 @@ import { Container, Spacer } from './assets/styles';
 
 interface Props {
   items: Array<itemType>,
+  updateContent: (arg0: any) => void,
 }
 
-const List: React.FC<Props> = ({ items }) => {
+const List: React.FC<Props> = ({ items, updateContent }) => {
   const navigation = useNavigation();
 
   return (
@@ -18,9 +19,12 @@ const List: React.FC<Props> = ({ items }) => {
       {items.map(item => (
         <React.Fragment key={item.id}>
         <Preview
-          showContent={() => navigation.navigate('Content')}
+          showContent={() => {
+            updateContent(item);
+            navigation.navigate('Content');
+          }}
           title={item.title}
-          subTitle={item.subTitle}
+          intro={item.intro}
           name={item.user.name}
           date={item.date}
           type={item.type}

@@ -5,7 +5,7 @@ import ContentType from '../../../atoms/ContentType';
 import {
   Container,
   Title,
-  SubTitle,
+  Intro,
   BottomContainer,
   UserContainer,
   NameContainer,
@@ -16,7 +16,7 @@ import {
 interface Props {
   showContent: () => void,
   title: string,
-  subTitle: string,
+  intro: string,
   name: string,
   date: string,
   type: string,
@@ -25,7 +25,7 @@ interface Props {
 const Preview: React.FC<Props> = ({
   showContent,
   title,
-  subTitle,
+  intro,
   name,
   date,
   type,
@@ -34,7 +34,7 @@ const Preview: React.FC<Props> = ({
     <Container onPress={showContent}>
       <ContentType type={type} />
       <Title>{title}</Title>
-      <SubTitle>{subTitle}</SubTitle>
+      <Intro>{intro}</Intro>
       <BottomContainer>
         <UserContainer>
           <NameContainer>

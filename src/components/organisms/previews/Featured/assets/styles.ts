@@ -58,7 +58,7 @@ export const Title = Styled.Text.attrs({
   color: ${colors.white};
 `;
 
-export const SubTitle = Styled.Text.attrs({
+export const Intro = Styled.Text.attrs({
   numberOfLines: 2,
 })`
   font-family: ${fonts.main.semiBold};
@@ -87,8 +87,8 @@ export const Name = Styled.Text`
 
 export const Dot = Styled.View<StyleProps>`
   position: absolute;
-  top: 12;
-  right: 12;
+  top: 12px;
+  right: 12px;
   width: 15px;
   height: 15px;
   border-radius: 8px;

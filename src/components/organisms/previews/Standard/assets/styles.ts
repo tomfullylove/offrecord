@@ -16,7 +16,7 @@ export const Title = Styled.Text`
   margin: 12px 0 6px;
 `;
 
-export const SubTitle = Styled.Text.attrs({
+export const Intro = Styled.Text.attrs({
   numberOfLines: 2,
 })`
   color: ${colors.darkGrey};

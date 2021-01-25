@@ -8,7 +8,7 @@ import {
   Image,
   Content,
   Title,
-  SubTitle,
+  Intro,
   BottomContainer,
   UserContainer,
   Name,
@@ -18,7 +18,7 @@ import {
 interface Props {
   showContent: () => void,
   title: string,
-  subTitle: string,
+  intro: string,
   name: string,
   type: string,
 }
@@ -26,7 +26,7 @@ interface Props {
 const Preview: React.FC<Props> = ({
   showContent,
   title,
-  subTitle,
+  intro,
   name,
   type,
 }) => {
@@ -37,7 +37,7 @@ const Preview: React.FC<Props> = ({
         <Content>
           <Dot color={contentTypeStyles[type.toLowerCase()].color} />
           <Title>{title}</Title>
-          <SubTitle>{subTitle}</SubTitle>
+          <Intro>{intro}</Intro>
           <BottomContainer>
             <UserContainer>
               <Name>{name}</Name>
