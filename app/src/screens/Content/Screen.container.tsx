@@ -9,7 +9,7 @@ interface StateProps {
 export type Props = StateProps;
 
 const mapStateToProps = (state: any): StateProps => ({
-  content: state.visibleContent,
+  content: state.visibleContent.content,
 });
 
 export default connect(mapStateToProps)(Screen);
