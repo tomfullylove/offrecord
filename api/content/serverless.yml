@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: offrecord-api
+service: offrecord-content
 
 frameworkVersion: '2'
 
@@ -22,5 +22,23 @@ provider:
   region: eu-west-1
 
 functions:
-  hello:
-    handler: handler.hello
+  content_post:
+    handler: functions/content.post
+    events:
+      - http:
+          method: post
+          path: content
+          request:
+            schema:
+              application/json: ${file(schemas/content_request.json)}
+
+  content_discovery_get:
+    handler: functions/content_discovery.get
+    events:
+      - http:
+          method: get
+          path: content/discovery/{user_id}
+          request:
+            parameters:
+              paths:
+                user_id: true
