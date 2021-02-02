@@ -42,3 +42,6 @@ functions:
             parameters:
               paths:
                 user_id: true
+
+plugins:
+  - serverless-offline
