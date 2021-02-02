@@ -1,4 +1,4 @@
-import {TEST_ACTION, DiscoverState, ConfigActionTypes} from './types';
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   standard: [
@@ -72,16 +72,10 @@ const initialState = {
   ],
 };
 
-function discover(state = initialState, action: ConfigActionTypes) {
-  switch (action.type) {
-    case TEST_ACTION:
-      return {
-        ...state,
-        test: action.value,
-      };
-    default:
-      return state;
-  }
-}
+const discoverSlice = createSlice({
+  name: 'discover',
+  initialState: initialState,
+  reducers: {}
+})
 
-export default discover;
+export default discoverSlice.reducer

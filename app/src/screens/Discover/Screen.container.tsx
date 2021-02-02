@@ -1,8 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 
-import { updateVisibleContent } from '../../redux/visibleContent/actions';
-import { VisibleContentActionTypes } from '../../redux/visibleContent/types';
+import { updateVisibleContent } from '../../state/features/visibleContentSlice';
 
 import Screen from './Screen.component';
 
@@ -23,7 +22,7 @@ const mapStateToProps = (state: any): StateProps => ({
 });
 
 const mapDispatchToProps = (dispatch: Dispatch): DispatchProps => ({
-  updateContent: (content: any): VisibleContentActionTypes => dispatch(updateVisibleContent(content)),
+  updateContent: (content: any): any => dispatch(updateVisibleContent(content)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Screen);
