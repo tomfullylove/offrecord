@@ -1,11 +1,5 @@
 {
-  "function": {
-    "discovery": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  },
+  "function": {},
   "auth": {
     "cognito09a31c11": {
       "service": "Cognito",
@@ -14,19 +8,20 @@
     }
   },
   "api": {
-    "discovery": {
-      "service": "API Gateway",
+    "offrecord": {
+      "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "discovery",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authcognito09a31c11"
+            }
+          },
+          "additionalAuthenticationProviders": []
         }
-      ]
+      }
     }
   }
 }
