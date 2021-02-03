@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "offrecord_identitypool_64a7c797",
+    "identityPoolName": "offrecord_identitypool_792ff196",
     "allowUnauthenticatedIdentities": true,
-    "resourceNameTruncated": "offrec64a7c797",
-    "userPoolName": "offrecord_userpool_64a7c797",
+    "resourceNameTruncated": "offrec792ff196",
+    "userPoolName": "offrecord_userpool_792ff196",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "offrec64a7c797_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "offrec792ff196_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "authSelections": "identityPoolAndUserPool",
-    "resourceName": "cognitob3e32984",
+    "resourceName": "cognito09a31c11",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",

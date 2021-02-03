@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-offrecord-dev-173921-authRole",
-      "UnauthRoleArn": "arn:aws:iam::843252536701:role/amplify-offrecord-dev-173921-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::843252536701:role/amplify-offrecord-dev-173921-authRole",
+      "AuthRoleName": "amplify-offrecord-dev-180856-authRole",
+      "UnauthRoleArn": "arn:aws:iam::843252536701:role/amplify-offrecord-dev-180856-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::843252536701:role/amplify-offrecord-dev-180856-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-offrecord-dev-173921-deployment",
-      "UnauthRoleName": "amplify-offrecord-dev-173921-unauthRole",
-      "StackName": "amplify-offrecord-dev-173921",
-      "StackId": "arn:aws:cloudformation:eu-west-1:843252536701:stack/amplify-offrecord-dev-173921/c12f0480-6646-11eb-9c90-02f1b48d2a9b",
-      "AmplifyAppId": "d3mvvmr9pbg6i5"
+      "DeploymentBucketName": "amplify-offrecord-dev-180856-deployment",
+      "UnauthRoleName": "amplify-offrecord-dev-180856-unauthRole",
+      "StackName": "amplify-offrecord-dev-180856",
+      "StackId": "arn:aws:cloudformation:eu-west-1:843252536701:stack/amplify-offrecord-dev-180856/e3001aa0-664a-11eb-b971-0656164f0cc9",
+      "AmplifyAppId": "d1jfrycpl4gvj3"
     },
     "categories": {
       "auth": {
-        "cognitob3e32984": {}
+        "cognito09a31c11": {}
       }
     }
   }

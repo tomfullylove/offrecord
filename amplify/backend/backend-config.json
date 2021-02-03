@@ -1,39 +1,26 @@
 {
   "function": {
-    "offrecord-content": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
-    "offrecord-discovery": {
+    "discovery": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "auth": {
-    "cognitob3e32984": {
+    "cognito09a31c11": {
       "service": "Cognito",
       "serviceType": "managed",
       "providerPlugin": "awscloudformation"
     }
   },
   "api": {
-    "content": {
+    "discovery": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "offrecord-content",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "offrecord-discovery",
+          "resourceName": "discovery",
           "attributes": [
             "Name",
             "Arn"

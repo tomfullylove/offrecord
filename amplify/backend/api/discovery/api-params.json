@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/{user-id}",
+            "lambdaFunction": "discovery",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/GET"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/*"
+        }
+    ],
+    "resourceName": "discovery",
+    "apiName": "discovery",
+    "functionArns": [
+        {
+            "lambdaFunction": "discovery"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-offrecord-dev-180856-authRole",
+        "unAuthRoleName": "amplify-offrecord-dev-180856-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "discovery",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
