@@ -1,0 +1,69 @@
+{
+    "paths": [
+        {
+            "name": "/content",
+            "lambdaFunction": "offrecord-content",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/content"
+        },
+        {
+            "name": "/discovery/{user-id}",
+            "lambdaFunction": "offrecord-discovery",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/GET"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            },
+            "policyResourceName": "/discovery/*"
+        }
+    ],
+    "resourceName": "content",
+    "apiName": "content",
+    "functionArns": [
+        {
+            "lambdaFunction": "offrecord-content"
+        },
+        {
+            "lambdaFunction": "offrecord-discovery"
+        }
+    ],
+    "privacy": {
+        "auth": 2,
+        "unauth": 2,
+        "authRoleName": "amplify-offrecord-dev-173921-authRole",
+        "unAuthRoleName": "amplify-offrecord-dev-173921-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "offrecord-content",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "offrecord-discovery",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
