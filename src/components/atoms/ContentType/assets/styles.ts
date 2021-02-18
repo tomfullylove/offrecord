@@ -16,7 +16,7 @@ export const Container = Styled.View<StyleProps>`
 export const Text = Styled.Text`
   align-self: center;
   font-family: ${fonts.main.semiBold};
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   padding: 0 1px 3px;
 `;
