@@ -13,7 +13,15 @@ const initialState = {
         },
         date: '22 Apr 2020',
         type: 'article',
-        content: {}
+        content: [
+          {"type": "text", "text": "Truffaut austin chia thundercats selfies. Echo park dreamcatcher 3 wolf moon mustache. Pickled sriracha try-hard la croix shaman pop-up plaid slow-carb subway tile. Man braid +1 scenester yuccie unicorn. Iceland jean shorts church-key XOXO man braid"},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Tote bag etsy chambray, waistcoat post-ironic mlkshk shabby chic taiyaki irony you probably haven't heard of them cray. Offal leggings cornhole pour-over 3 wolf."},
+          {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled. Biodiesel viral vape glossier, lo-fi snackwave kombucha put a bird on it austin wayfarers."},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Thundercats viral enamel pin, williamsburg hella blog bicycle rights before they sold out fam hell of."},
+          {"type": "text", "text": "Vape messenger bag blue bottle pug fam fingerstache beard unicorn. You probably haven't heard of them wolf la croix semiotics heirloom fingerstache."}
+        ]
       },
       {
         id: 'c38d5280-667e-47e8-ad52-d983970c6ff2',
@@ -25,7 +33,15 @@ const initialState = {
         },
         date: '17 Apr 2020',
         type: 'review',
-        content: {}
+        content: [
+          {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Humblebrag 90's pour-over actually af master cleanse umami hashtag truffaut. Activated charcoal seitan mlkshk, letterpress wolf +1 raw denim."},
+          {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Craft beer ugh photo booth pickled. Biodiesel viral vape glossier, lo-fi snackwave kombucha put a bird on it austin wayfarers."},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Thundercats viral enamel pin, williamsburg hella blog bicycle rights before they sold out fam hell of."},
+          {"type": "text", "text": "Vape messenger bag blue bottle pug fam fingerstache beard unicorn. You probably haven't heard of them wolf la croix semiotics heirloom fingerstache."}
+        ]
       },
       {
         id: 'c38d5280-667e-48e8-ad52-d983970c6ff2',
@@ -37,7 +53,15 @@ const initialState = {
         },
         date: '12 Mar 2020',
         type: 'interview',
-        content: {}
+        content: [
+          {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Humblebrag 90's pour-over actually af master cleanse umami hashtag truffaut. Activated charcoal seitan mlkshk, letterpress wolf +1 raw denim."},
+          {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled. Biodiesel viral vape glossier, lo-fi snackwave kombucha put a bird on it austin wayfarers."},
+          {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+          {"type": "text", "text": "Thundercats viral enamel pin, williamsburg hella blog bicycle rights before they sold out fam hell of."},
+          {"type": "text", "text": "Vape messenger bag blue bottle pug fam fingerstache beard unicorn. You probably haven't heard of them wolf la croix semiotics heirloom fingerstache."}
+        ]
       },
     ],
     featured: [
@@ -54,7 +78,15 @@ const initialState = {
             },
             date: '12 Mar 2020',
             type: 'review',
-            content: {}
+            content: [
+              {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
+              {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+              {"type": "text", "text": "Humblebrag 90's pour-over actually af master cleanse umami hashtag truffaut. Activated charcoal seitan mlkshk, letterpress wolf +1 raw denim."},
+              {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled. Biodiesel viral vape glossier, lo-fi snackwave kombucha put a bird on it austin wayfarers."},
+              {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+              {"type": "text", "text": "Thundercats viral enamel pin, williamsburg hella blog bicycle rights before they sold out fam hell of."},
+              {"type": "text", "text": "Vape messenger bag blue bottle pug fam fingerstache beard unicorn. You probably haven't heard of them wolf la croix semiotics heirloom fingerstache."}
+            ]
           },
           {
             id: 'c38d5280-667e-47e9-ad52-d980970c6ff4',
@@ -66,7 +98,15 @@ const initialState = {
             },
             date: '12 Mar 2020',
             type: 'article',
-            content: {}
+            content: [
+              {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
+              {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+              {"type": "text", "text": "Humblebrag 90's pour-over actually af master cleanse umami hashtag truffaut. Activated charcoal seitan mlkshk, letterpress wolf +1 raw denim."},
+              {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled. Biodiesel viral vape glossier, lo-fi snackwave kombucha put a bird on it austin wayfarers."},
+              {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
+              {"type": "text", "text": "Thundercats viral enamel pin, williamsburg hella blog bicycle rights before they sold out fam hell of."},
+              {"type": "text", "text": "Vape messenger bag blue bottle pug fam fingerstache beard unicorn. You probably haven't heard of them wolf la croix semiotics heirloom fingerstache."}
+            ]
           },
         ],
       },

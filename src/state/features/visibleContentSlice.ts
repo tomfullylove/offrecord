@@ -5,7 +5,7 @@ const initialState = {
     id: '',
     title: '',
     intro: '',
-    content: {},
+    content: [],
     date: '',
     type: '',
   },
