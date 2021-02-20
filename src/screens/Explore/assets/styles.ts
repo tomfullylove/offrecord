@@ -20,6 +20,9 @@ export const ContentCard = Styled(Pressable)<Props>`
   flex-direction: column;
   justify-content: flex-end;
   background-color: ${({ color }) => color}
+  shadow-color: ${({ color }) => color};
+  shadow-offset: 0px 3px;
+  shadow-opacity: 0.2;
   padding: 16px;
   margin: 8px 16px;
   min-height: 130px;
