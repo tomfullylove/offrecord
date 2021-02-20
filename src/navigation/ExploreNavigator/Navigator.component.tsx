@@ -17,7 +17,7 @@ const Navigator: React.FC = () => {
         name="Explore"
         component={Explore}
         options={{
-          headerLargeTitle: true,
+          headerLargeTitle: false,
           headerLargeTitleStyle: {
             fontFamily: fonts.main.bold,
           },

@@ -2,8 +2,7 @@ import { ContentTypeStyles } from '../types/ContentTypeStyles';
 import colors from './colors';
 
 export default {
-  'article': { color: colors.main[0], width: '55px' },
-  'review': { color: colors.main[1], width: '53px' },
-  'interview': {color: colors.main[2], width: '74px'},
-  '': {color:colors.white, width: '0px'}
+  'article': { color: { main: colors.main[0], text: colors.black }, width: '55px' },
+  'review': { color: { main: colors.main[1], text: colors.white }, width: '53px' },
+  'interview': { color: { main: colors.main[2], text: colors.black }, width: '74px'},
 } as ContentTypeStyles;

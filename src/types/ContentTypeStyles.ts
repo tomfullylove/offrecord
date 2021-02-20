@@ -1,5 +1,8 @@
 export type ContentTypeStyle = {
-  color: string,
+  color: {
+    main: string,
+    text: string,
+  },
   width: string,
 };
 

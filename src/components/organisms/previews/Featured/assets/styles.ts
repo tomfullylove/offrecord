@@ -10,9 +10,9 @@ interface StyleProps {
 }
 
 export const Container = Styled(Pressable)`
-  shadow-color: ${colors.shadow};
+  shadow-color: ${colors.black};
   shadow-offset: 0px 3px;
-  shadow-opacity: 1;
+  shadow-opacity: 0.2;
   margin-bottom: 6px;
 `;
 

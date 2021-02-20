@@ -35,7 +35,7 @@ const Preview: React.FC<Props> = ({
       <Image source={require('../../../../../assets/records.jpg')}>
         <Backdrop />
         <Content>
-          <Dot color={contentTypeStyles[type.toLowerCase()].color} />
+          <Dot color={contentTypeStyles[type.toLowerCase()].color.main} />
           <Title>{title}</Title>
           <Intro>{intro}</Intro>
           <BottomContainer>
