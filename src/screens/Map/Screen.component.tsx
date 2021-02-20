@@ -12,7 +12,6 @@ const Map: React.FC = () => {
         bottom: 0,
       }}
       showsUserLocation={true}
-      minZoomLevel={8}
     />
   );
 };
