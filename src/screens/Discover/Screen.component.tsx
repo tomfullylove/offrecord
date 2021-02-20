@@ -6,7 +6,7 @@ import Standard from '../../components/templates/list/Standard';
 
 import { Props } from './Screen.container';
 
-const Discover: React.FC<Props> = ({ featuredContent, standardContent, updateContent }) => {
+const Screen: React.FC<Props> = ({ featuredContent, standardContent, updateContent }) => {
 
   return (
     <PageScrollContainer>
@@ -16,4 +16,4 @@ const Discover: React.FC<Props> = ({ featuredContent, standardContent, updateCon
   );
 };
 
-export default Discover;
+export default Screen;

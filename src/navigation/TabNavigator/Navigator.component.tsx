@@ -6,6 +6,7 @@ import colors from '../../utils/colors';
 
 import Discover from '../DiscoverNavigator';
 import Map from '../../screens/Map';
+import Explore from '../ExploreNavigator';
 import Generic from '../../screens/Generic';
 
 const Tab = createBottomTabNavigator();
@@ -38,10 +39,10 @@ const Navigator: React.FC = () => {
         }}
       />
       <Tab.Screen
-        name="Search"
-        component={Generic}
+        name="Explore"
+        component={Explore}
         options={{
-          tabBarLabel: 'Search',
+          tabBarLabel: 'Explore',
           tabBarIcon: ({color, size}) => (
             <Ionicons name="search-outline" color={color} size={size} />
           ),
