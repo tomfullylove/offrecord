@@ -1,16 +1,32 @@
 import Styled from 'styled-components/native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import colors from '../../../../utils/colors';
 import fonts from '../../../../utils/fonts';
+
+export const Container = Styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  background-color: ${colors.lightGrey};
+  padding: 12px;
+`;
+
+export const Icon = Styled(Ionicons).attrs({
+  name: 'search',
+  color: colors.grey,
+  size: 18,
+})`
+  margin-right: 6px;
+`;
 
 export const Input = Styled.TextInput.attrs({
   placeholder: 'Search',
   placeholderTextColor: colors.grey,
   returnKeyType: 'search',
 })`
-  border-radius: 8px;
-  background-color: ${colors.lightGrey};
   font-family: ${fonts.main.semiBold};
-  padding: 12px;
-  font-size: 20px;
+  font-size: 18px;
+  flex-grow: 1;
 `;
