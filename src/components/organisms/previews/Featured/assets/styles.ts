@@ -31,7 +31,7 @@ export const Backdrop = Styled(LinearGradient).attrs({
 `;
 
 export const Image = Styled.ImageBackground`
-  height: 304px;
+  aspectRatio: 0.85;
   width: 248px;
   position: relative;
   display: flex;

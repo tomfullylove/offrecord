@@ -40,6 +40,7 @@ export const ScrollContainer = Styled.ScrollView`
 
 export const Image = Styled.ImageBackground`
   min-height: 350px;
+  aspectRatio: 1;
   width: 90%;
   align-self: center;
   margin: 8px 0;
@@ -71,6 +72,38 @@ export const Title = Styled.Text`
   font-size: 40px;
   line-height: 40px;
   color: ${colors.white};
+`;
+
+export const UserContainer = Styled.View`
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const NameContainer = Styled.View`
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+`;
+
+export const UserImage = Styled.Image`
+  width: 32px;
+  aspectRatio: 1;
+  border-radius: 16px;
+`;
+
+export const Name = Styled.Text`
+  font-family: ${fonts.main.semiBold};
+  color: ${colors.white};
+  font-size: 15px;
+  margin-bottom: 4px;
+`;
+
+export const Date = Styled.Text`
+  color: ${colors.white};
+  font-family: ${fonts.main.regular};
+  font-size: 13px;
 `;
 
 export const ContentContainer = Styled.View`

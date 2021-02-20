@@ -14,6 +14,11 @@ import {
   Image,
   Backdrop,
   Title,
+  UserContainer,
+  NameContainer,
+  UserImage,
+  Name,
+  Date,
   ContentContainer,
   IntroText,
   SubTitle,
@@ -52,6 +57,13 @@ const Content: React.FC<Props> = ({ content }) => {
         <Image source={require('../../../assets/records.jpg')}>
           <Backdrop />
           <Title>{content.title}</Title>
+          <UserContainer>
+            <UserImage source={require('../../../assets/person.jpg')} />
+            <NameContainer>
+              <Name>by {content.user.name}</Name>
+              <Date>{content.date}</Date>
+            </NameContainer>
+          </UserContainer>
         </Image>
         <ContentContainer>
           <IntroText>{content.intro}</IntroText>
