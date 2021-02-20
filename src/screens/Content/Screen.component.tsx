@@ -55,7 +55,7 @@ const Content: React.FC<Props> = ({ content }) => {
         </Image>
         <ContentContainer>
           <IntroText>{content.intro}</IntroText>
-          <ContentBlock contentBlock={content.content} />
+          <ContentBlock contentBlock={content.content}/>
         </ContentContainer>
       </ScrollContainer>
     </PageContainer>
