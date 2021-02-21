@@ -2,9 +2,9 @@ export default {
   black: '#000000',
   white: '#FFFFFF',
   main: [
-    '#f94144',
+    '#f75254',
     '#277da1',
-    '#f9c74f'
+    '#F6B213'
   ],
   lightGrey: '#f2f2f2',
   grey: '#919191',
