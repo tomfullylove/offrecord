@@ -10,7 +10,7 @@ interface StyleProps {
 }
 
 export const Container = Styled(Pressable)`
-  shadow-color: ${colors.black};
+  shadow-color: ${colors.background.sub};
   shadow-offset: 0px 3px;
   shadow-opacity: 0.2;
   margin-bottom: 6px;
@@ -55,7 +55,7 @@ export const Title = Styled.Text.attrs({
   font-family: ${fonts.main.bold};
   font-size: 32px;
   line-height: 32px;
-  color: ${colors.white};
+  color: ${colors.text.main};
 `;
 
 export const Intro = Styled.Text.attrs({
@@ -63,7 +63,7 @@ export const Intro = Styled.Text.attrs({
 })`
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
-  color: ${colors.lightGrey};
+  color: ${colors.text.sub};
 `;
 
 export const BottomContainer = Styled.View`
@@ -82,7 +82,7 @@ export const UserContainer = Styled.View`
 export const Name = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 12px;
-  color: ${colors.white};
+  color: ${colors.text.main};
 `;
 
 export const Dot = Styled.View<StyleProps>`

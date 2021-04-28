@@ -9,13 +9,13 @@ export const Container = Styled.View`
   flex-direction: row;
   align-items: center;
   border-radius: 8px;
-  background-color: ${colors.lightGrey};
+  background-color: ${colors.background.sub};
   padding: 12px;
 `;
 
 export const Icon = Styled(Ionicons).attrs({
   name: 'search',
-  color: colors.grey,
+  color: colors.text.main,
   size: 18,
 })`
   margin-right: 6px;
@@ -23,7 +23,7 @@ export const Icon = Styled(Ionicons).attrs({
 
 export const Input = Styled.TextInput.attrs({
   placeholder: 'Search',
-  placeholderTextColor: colors.grey,
+  placeholderTextColor: colors.text.main,
   returnKeyType: 'search',
 })`
   font-family: ${fonts.main.semiBold};

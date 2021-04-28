@@ -6,7 +6,7 @@ import colors from '../../../utils/colors';
 import fonts from '../../../utils/fonts';
 
 export const PageContainer = Styled.SafeAreaView`
-  background-color: ${colors.white};
+  background-color: ${colors.background.main};
   height: 100%;
 `;
 
@@ -26,7 +26,7 @@ export const Header = Styled.View`
 
 export const CloseIcon = Styled(Ionicons).attrs({
   name: 'close-outline',
-  color: colors.darkGrey,
+  color: colors.text.main,
   size: 32,
 })`
   margin-right: 16px;
@@ -35,7 +35,6 @@ export const CloseIcon = Styled(Ionicons).attrs({
 export const ScrollContainer = Styled.ScrollView`
   display: flex;
   flex-direction: column;
-  background-color: white;
 `;
 
 export const Image = Styled.ImageBackground`
@@ -71,7 +70,7 @@ export const Title = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 40px;
   line-height: 40px;
-  color: ${colors.white};
+  color: ${colors.text.main};
 `;
 
 export const UserContainer = Styled.View`
@@ -95,13 +94,13 @@ export const UserImage = Styled.Image`
 
 export const Name = Styled.Text`
   font-family: ${fonts.main.semiBold};
-  color: ${colors.white};
+  color: ${colors.text.main};
   font-size: 15px;
   margin-bottom: 4px;
 `;
 
 export const Date = Styled.Text`
-  color: ${colors.white};
+  color: ${colors.text.main};
   font-family: ${fonts.main.regular};
   font-size: 13px;
 `;
@@ -116,7 +115,7 @@ export const ContentContainer = Styled.View`
 export const IntroText = Styled.Text`
   font-family: ${fonts.main.semiBold};
   font-size: 17px;
-  color: ${colors.black};
+  color: ${colors.text.main};
   line-height: 23px;
   margin: 16px 0 8px;
 `;
@@ -124,7 +123,7 @@ export const IntroText = Styled.Text`
 export const SubTitle = Styled.Text`
   font-family: ${fonts.main.bold};
   font-size: 17px;
-  color: ${colors.black};
+  color: ${colors.text.main};
   line-height: 23px;
   margin: 16px 0 8px;
 `;
@@ -132,7 +131,7 @@ export const SubTitle = Styled.Text`
 export const Text = Styled.Text`
   font-family: ${fonts.main.regular};
   font-size: 17px;
-  color: ${colors.black};
+  color: ${colors.text.main};
   line-height: 23px;
   margin: 8px 0;
 `;

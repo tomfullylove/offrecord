@@ -21,7 +21,7 @@ const Screen: React.FC = () => {
         {contentKeys.map((contentKey) => (
           <ContentCard key={contentKey} color={contentTypes[contentKey].color.main}>
             <ContentText color={contentTypes[contentKey].color.text}>{capitalise(contentKey)}</ContentText>
-            <ContentSubText color={contentTypes[contentKey].color.text}>Heirloom tacos jean shorts messenger bag, four loko mumblecore racletter</ContentSubText>
+            <ContentSubText color={contentTypes[contentKey].color.text}>Kale chips synth taxidermy freegan schlitz taiyaki chillwave tumblr ethical. Tousled sustainable</ContentSubText>
           </ContentCard>
         ))}
       </PageScrollContainer>

@@ -15,8 +15,12 @@ const Navigator: React.FC = () => {
     <Tab.Navigator
       tabBarOptions={{
         showLabel: false,
-        activeTintColor: colors.black,
-        inactiveTintColor: colors.grey,
+        activeTintColor: colors.main[0],
+        inactiveTintColor: colors.text.sub,
+        style: { 
+          backgroundColor: colors.background.main,
+          borderTopWidth: 0,
+        }
       }}>
       <Tab.Screen
         name="Discover"

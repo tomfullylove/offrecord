@@ -8,6 +8,6 @@ export const Container = Styled.View`
 `;
 
 export const Spacer = Styled.View`
-  background-color: ${colors.lightGrey};
+  background-color: ${colors.background.main};
   height: 8px;
 `;

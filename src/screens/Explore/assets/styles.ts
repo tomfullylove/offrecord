@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const SearchContainer = Styled.View`
-  background-color: ${colors.white};
+  background-color: ${colors.background.main};
   width: 100%;
   padding: 8px 16px 16px;
 `;

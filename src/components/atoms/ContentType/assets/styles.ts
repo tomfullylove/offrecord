@@ -1,6 +1,7 @@
 import Styled from 'styled-components/native';
 
 import fonts from '../../../../utils/fonts';
+import colors from '../../../../utils/colors';
 
 interface StyleProps {
   width?: string,
@@ -16,6 +17,7 @@ export const Container = Styled.View<StyleProps>`
 export const Text = Styled.Text`
   align-self: center;
   font-family: ${fonts.main.semiBold};
+  color: ${colors.text.main};
   font-size: 13px;
   text-transform: uppercase;
   padding: 0 1px 3px;

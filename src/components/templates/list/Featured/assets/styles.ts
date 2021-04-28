@@ -6,7 +6,7 @@ import fonts from '../../../../../utils/fonts';
 export const Container = Styled.View`
   display: flex;
   flex-direction: column;
-  background-color: ${colors.lightGrey};
+  background-color: ${colors.background.main};
   padding: 16px 0;
   margin-top: 8px;
 `;
@@ -14,6 +14,7 @@ export const Container = Styled.View`
 export const Title = Styled.Text`
   margin: 0 0 16px 16px;
   font-family: ${fonts.main.semiBold};
+  color: ${colors.text.main};
   font-size: 16px;
 `;
 

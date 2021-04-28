@@ -6,6 +6,9 @@ import fonts from '../../../../../utils/fonts';
 
 export const Container = Styled(Pressable)`
   display: flex;
+  background-color: ${colors.background.sub};
+  margin: 6px 16px;
+  border-radius: 8px;
   flex-direction: column;
   padding: 24px;
 `;
@@ -14,6 +17,7 @@ export const Title = Styled.Text.attrs({
   numberOfLines: 2,
 })`
   font-family: ${fonts.main.bold};
+  color: ${colors.text.main};
   font-size: 20px;
   margin: 12px 0 6px;
 `;
@@ -21,7 +25,7 @@ export const Title = Styled.Text.attrs({
 export const Intro = Styled.Text.attrs({
   numberOfLines: 2,
 })`
-  color: ${colors.darkGrey};
+  color: ${colors.text.main};
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
 `;
@@ -46,12 +50,13 @@ export const NameContainer = Styled.View`
 
 export const Name = Styled.Text`
   font-family: ${fonts.main.semiBold};
+  color: ${colors.text.main};
   font-size: 14px;
   margin-bottom: 4px;
 `;
 
 export const Date = Styled.Text`
-  color: ${colors.darkGrey};
+  color: ${colors.text.main};
   font-family: ${fonts.main.regular};
   font-size: 12px;
 `;
