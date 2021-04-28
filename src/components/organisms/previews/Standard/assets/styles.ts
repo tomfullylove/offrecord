@@ -25,7 +25,7 @@ export const Title = Styled.Text.attrs({
 export const Intro = Styled.Text.attrs({
   numberOfLines: 2,
 })`
-  color: ${colors.text.main};
+  color: ${colors.text.sub};
   font-family: ${fonts.main.semiBold};
   font-size: 14px;
 `;

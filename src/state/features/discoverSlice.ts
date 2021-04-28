@@ -52,7 +52,7 @@ const initialState = {
           name: 'Tyler Lewis',
         },
         date: '12 Mar 2020',
-        type: 'interview',
+        type: 'article',
         content: [
           {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
           {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},

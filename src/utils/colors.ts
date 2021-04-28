@@ -6,10 +6,11 @@ export default {
   text: {
     main: '#F5ECEC',
     sub: '#E6DADA',
+    faint: '#8f7e7e',
   },
   main: [
     '#DB1162',
-    '#DB1162',
-    '#DB1162',
+    '#db11ce',
+    '#9b11db',
   ],
 };
