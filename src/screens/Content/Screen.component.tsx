@@ -11,14 +11,14 @@ import {
   Header,
   CloseIcon,
   ScrollContainer,
-  Image,
-  Backdrop,
+  MusicContainer,
   Title,
   UserContainer,
   NameContainer,
   UserImage,
   Name,
   Date,
+  FlameIcon,
   ContentContainer,
   IntroText,
   SubTitle,
@@ -54,18 +54,16 @@ const Content: React.FC<Props> = ({ content }) => {
         <CloseIcon onPress={() => navigation.goBack()} />
       </TopContainer>
       <ScrollContainer>
-        <Image source={require('../../../assets/records.jpg')}>
-          <Backdrop />
+        <MusicContainer />
+        <ContentContainer>
           <Title>{content.title}</Title>
           <UserContainer>
-            <UserImage source={require('../../../assets/person.jpg')} />
             <NameContainer>
               <Name>by {content.user.name}</Name>
               <Date>{content.date}</Date>
             </NameContainer>
+            <FlameIcon />
           </UserContainer>
-        </Image>
-        <ContentContainer>
           <IntroText>{content.intro}</IntroText>
           <ContentBlock contentBlock={content.content}/>
         </ContentContainer>

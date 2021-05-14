@@ -53,7 +53,7 @@ export const Title = Styled.Text.attrs({
   numberOfLines: 4,
 })`
   font-family: ${fonts.main.bold};
-  font-size: 32px;
+  font-size: 30px;
   line-height: 32px;
   color: ${colors.text.main};
 `;
