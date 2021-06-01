@@ -90,6 +90,7 @@ export const Date = Styled.Text`
 `;
 
 export const FlameIcon = Styled(Ionicons).attrs({
+  name: 'flame',
   size: 32,
 })`
 `;

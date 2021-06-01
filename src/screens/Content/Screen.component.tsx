@@ -68,8 +68,7 @@ const Content: React.FC<Props> = ({ content }) => {
               <Date>{content.date}</Date>
             </NameContainer>
             <FlameIcon
-              name={`flame${!liked ? '-outline' : ''}`}
-              color={liked ? '#db5b11' : colors.text.sub}
+              color={liked ? colors.flame.main : colors.flame.faint}
               onPress={() => setLiked(!liked)}
             />
           </UserContainer>

@@ -8,5 +8,9 @@ export default {
     sub: '#E6DADA',
     faint: '#8f7e7e',
   },
+  flame: {
+    main: '#db5b11',
+    faint: '#362b26',
+  },
   main: ['#DB1162', '#ca11db'],
 };
