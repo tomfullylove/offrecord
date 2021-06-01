@@ -13,6 +13,7 @@ const initialState = {
         },
         date: '22 Apr 2020',
         type: 'article',
+        tags: [],
         content: [
           {"type": "text", "text": "Truffaut austin chia thundercats selfies. Echo park dreamcatcher 3 wolf moon mustache. Pickled sriracha try-hard la croix shaman pop-up plaid slow-carb subway tile. Man braid +1 scenester yuccie unicorn. Iceland jean shorts church-key XOXO man braid"},
           {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
@@ -33,6 +34,7 @@ const initialState = {
         },
         date: '17 Apr 2020',
         type: 'review',
+        tags: [],
         content: [
           {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
           {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
@@ -53,6 +55,7 @@ const initialState = {
         },
         date: '12 Mar 2020',
         type: 'article',
+        tags: [],
         content: [
           {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
           {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
@@ -78,6 +81,7 @@ const initialState = {
             },
             date: '12 Mar 2020',
             type: 'review',
+            tags: [],
             content: [
               {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
               {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},
@@ -98,6 +102,7 @@ const initialState = {
             },
             date: '12 Mar 2020',
             type: 'article',
+            tags: [],
             content: [
               {"type": "text", "text": "Master cleanse venmo irony raw denim palo santo, heirloom kale chips deep v chia slow-carb. Cliche cornhole mlkshk paleo put a bird on it. Bicycle rights semiotics brooklyn vaporware art party, roof party lyft. Slow-carb craft beer ugh photo booth pickled."},
               {"type": "subTitle", "text": "Fixie meggings williamsburg chambray authentic, aesthetic cray cred."},

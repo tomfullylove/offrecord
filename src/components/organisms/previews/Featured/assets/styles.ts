@@ -56,6 +56,7 @@ export const Title = Styled.Text.attrs({
   font-size: 30px;
   line-height: 32px;
   color: ${colors.text.main};
+  margin-bottom: 4px;
 `;
 
 export const Intro = Styled.Text.attrs({
