@@ -38,10 +38,26 @@ export const ScrollContainer = Styled.ScrollView`
 
 export const MusicContainer = Styled.View`
   display: flex;
-  height: 250px;
+  flex-direction: row;
+  align-items: flex-end;
+  align-self: center;
+  width: 85%;
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #1a1816;
+  border-radius: 8px;
+`;
+
+export const PlayIcon = Styled(Ionicons).attrs({
+  name: 'play',
+  color: colors.text.main,
+  size: 32,
+})`
+  margin-right: 16px;
 `;
 
 export const Title = Styled.Text`
+  margin-top: 250px;
   font-family: ${fonts.main.bold};
   font-size: 28px;
   line-height: 32px;

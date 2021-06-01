@@ -12,10 +12,10 @@ import {
   CloseIcon,
   ScrollContainer,
   MusicContainer,
+  PlayIcon,
   Title,
   UserContainer,
   NameContainer,
-  UserImage,
   Name,
   Date,
   FlameIcon,
@@ -54,7 +54,6 @@ const Content: React.FC<Props> = ({ content }) => {
         <CloseIcon onPress={() => navigation.goBack()} />
       </TopContainer>
       <ScrollContainer>
-        <MusicContainer />
         <ContentContainer>
           <Title>{content.title}</Title>
           <UserContainer>
@@ -68,6 +67,9 @@ const Content: React.FC<Props> = ({ content }) => {
           <ContentBlock contentBlock={content.content}/>
         </ContentContainer>
       </ScrollContainer>
+      <MusicContainer>
+        <PlayIcon />
+      </MusicContainer>
     </PageContainer>
   );
 };
