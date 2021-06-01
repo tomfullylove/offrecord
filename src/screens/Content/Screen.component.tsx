@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
 import ContentType from '../../components/atoms/ContentType';
+import colors from '../../utils/colors';
 
 import { Props } from './Screen.container';
 
@@ -47,10 +48,15 @@ const ContentBlock: React.FC<contentBlockProps> = ({ contentBlock }) => {
 const Content: React.FC<Props> = ({ content }) => {
   const navigation = useNavigation();
 
+  const [ playing, setPlaying ] = useState(false);
+  const [ liked, setLiked ] = useState(true);
+
   return (
     <PageContainer>
       <TopContainer>
-        <Header><ContentType type={content.type} /></Header>
+        <Header>
+          <ContentType type={content.type} />
+        </Header>
         <CloseIcon onPress={() => navigation.goBack()} />
       </TopContainer>
       <ScrollContainer>
@@ -61,15 +67,24 @@ const Content: React.FC<Props> = ({ content }) => {
               <Name>by {content.user.name}</Name>
               <Date>{content.date}</Date>
             </NameContainer>
-            <FlameIcon />
+            <FlameIcon
+              name={`flame${!liked ? '-outline' : ''}`}
+              color={liked ? '#db5b11' : colors.text.sub}
+              onPress={() => setLiked(!liked)}
+            />
           </UserContainer>
           <IntroText>{content.intro}</IntroText>
           <ContentBlock contentBlock={content.content}/>
         </ContentContainer>
       </ScrollContainer>
-      <MusicContainer>
-        <PlayIcon />
-      </MusicContainer>
+      {content.type === 'review' && (
+        <MusicContainer>
+          <PlayIcon
+            name={playing ? 'pause-circle' : 'play-circle'}
+            onPress={() => setPlaying(!playing)}
+          />
+        </MusicContainer>
+      )}
     </PageContainer>
   );
 };

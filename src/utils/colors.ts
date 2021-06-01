@@ -8,9 +8,5 @@ export default {
     sub: '#E6DADA',
     faint: '#8f7e7e',
   },
-  main: [
-    '#DB1162',
-    '#db11ce',
-    '#9b11db',
-  ],
+  main: ['#DB1162', '#ca11db'],
 };

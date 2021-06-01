@@ -39,7 +39,6 @@ export const ScrollContainer = Styled.ScrollView`
 export const MusicContainer = Styled.View`
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   align-self: center;
   width: 85%;
   margin-top: 16px;
@@ -49,11 +48,10 @@ export const MusicContainer = Styled.View`
 `;
 
 export const PlayIcon = Styled(Ionicons).attrs({
-  name: 'play',
   color: colors.text.main,
   size: 32,
 })`
-  margin-right: 16px;
+  align-self: flex-end;
 `;
 
 export const Title = Styled.Text`
@@ -92,8 +90,6 @@ export const Date = Styled.Text`
 `;
 
 export const FlameIcon = Styled(Ionicons).attrs({
-  name: 'flame-outline',
-  color: colors.text.main,
   size: 32,
 })`
 `;
